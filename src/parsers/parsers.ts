@@ -42,6 +42,7 @@ import { POJContestParser } from './contest/POJContestParser';
 import { QDUOJContestParser } from './contest/QDUOJContestParser';
 import { RoboContestContestParser } from './contest/RoboContestContestParser';
 import { SeriousOJContestParser } from './contest/SeriousOJContestParser';
+import { ShortestPathOJContestParser } from './contest/ShortestPathOJContestParser';
 import { TimusOnlineJudgeContestParser } from './contest/TimusOnlineJudgeContestParser';
 import { TLXContestParser } from './contest/TLXContestParser';
 import { UniversalCupContestParser } from './contest/UniversalCupContestParser';
@@ -139,6 +140,7 @@ import { QQWhaleProblemParser } from './problem/QQWhaleProblemParser';
 import { RoboContestProblemParser } from './problem/RoboContestProblemParser';
 import { SDUTOnlineJudgeProblemParser } from './problem/SDUTOnlineJudgeProblemParser';
 import { SeriousOJProblemParser } from './problem/SeriousOJProblemParser';
+import { ShortestPathOJProblemParser } from './problem/ShortestPathOJProblemParser';
 import { SortMeProblemParser } from './problem/SortMeProblemParser';
 import { SPOJProblemParser } from './problem/SPOJProblemParser';
 import { SSOIERProblemParser } from './problem/SSOIERProblemParser';
@@ -376,6 +378,9 @@ export const parsers: Parser[] = [
 
   new SeriousOJProblemParser(),
   new SeriousOJContestParser(),
+
+  new ShortestPathOJProblemParser(),
+  new ShortestPathOJContestParser(),
 
   new SortMeProblemParser(),
 
